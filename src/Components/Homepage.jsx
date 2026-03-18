@@ -4,6 +4,7 @@ import { useEffect, useState } from "react"
 import axios from "axios"
 import Loader from "./Loader"
 import { Button } from "@/Components/ui/button"
+import Graphsection from "./Graphsection"
 
 
 export default function Homepage() {
@@ -109,7 +110,7 @@ async function fetchData() {
       )}
 
       <Herosection />
-
+      <Graphsection/>
     </div>
   )
 }
