@@ -17,7 +17,7 @@ async function fetchData() {
   setloader(true)
 
   try {
-    const res = await axios.get("https://dataprep-backend.onrender.com/api/v1/getStats")
+    const res = await axios.get("http://35.154.252.27:3000/api/v1/getStats")
     setStats(res.data.data || [])
   }
   catch (err) {
@@ -110,7 +110,7 @@ async function fetchData() {
       )}
 
       <Herosection />
-      <Graphsection/>
+      {/* <Graphsection/> */}
     </div>
   )
 }
