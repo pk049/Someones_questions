@@ -11,7 +11,7 @@ export default function AppContextProvider({ children }) {
   // Fetch companies from API
   async function fetchCompanies() {
     try {
-      const url = "https://35.154.252.27:3000/api/v1/getCompanies"
+      const url = "https://13.126.199.60:3000/api/v1/getCompanies"
       const res = await axios.get(url)
 
       SetCompanies(res.data.data || [])
