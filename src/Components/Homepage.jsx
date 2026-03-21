@@ -17,7 +17,7 @@ async function fetchData() {
   setloader(true)
 
   try {
-    const res = await axios.get("http://13.126.199.60:3000/api/v1/getStats")
+    const res = await axios.get("https://someones-questions.duckdns.org/api/v1/api/v1/getStats")
     setStats(res.data.data || [])
   }
   catch (err) {
